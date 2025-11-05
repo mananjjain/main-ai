@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XExpert | Dreamable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">Dreamable<span>XExpert</span></div>
+    <div class="controls">
+      <select id="modelSelect">
+        <option value="xexpert">🧠 XExpert</option>
+        <option value="caption">💬 Billion Dollar Caption Pro</option>
+      </select>
+      <button id="keyBtn">🔑 API Key</button>
+    </div>
+  </header>
+
+  <main class="chat-container">
+    <div id="chatWindow" class="chat-window"></div>
+    <div class="chat-input">
+      <textarea id="userInput" placeholder="Type your message..." rows="1"></textarea>
+      <button id="sendBtn">Send</button>
+    </div>
+  </main>
+
+  <footer class="footer">© 2025 Dreamable. Built with precision for creators.</footer>
+
+  <div id="apiModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Enter Your API Key</h3>
+      <input type="password" id="apiKeyInput" placeholder="hf_xxx_or_custom_key_here">
+      <div class="modal-actions">
+        <button id="saveKeyBtn">Save</button>
+        <button id="closeModalBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
